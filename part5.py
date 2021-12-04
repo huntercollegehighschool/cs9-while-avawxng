@@ -18,15 +18,14 @@ Enter a number or enter 0 to stop: 0
 Number of evens: 3
 
 '''
-
-num = int(input("Enter a number or enter 0 to stop:"))
+num = 1
 numbofeven = 0
 
 while num != 0:
-  if num % 2 == 0:
-    numbofeven = numbofeven + 1
+  num = int(input("Enter a number or enter 0 to stop:"))
+  if num % 2 == 0 and num != 0:
+    numbofeven += 1
   else: 
     numbofeven = numbofeven 
-  num = int(input("Enter a number or enter 0 to stop:"))
     
 print("Number of evens:", numbofeven)
